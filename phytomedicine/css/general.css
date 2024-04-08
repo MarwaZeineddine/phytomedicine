@@ -1,0 +1,249 @@
+.maincontainer{
+  margin-left: 30px;
+  margin-top: 70px;
+  position: relative;
+  width: 250px;
+  height: 320px;
+  background-color:transparent;
+  margin-bottom: 70px;
+  
+}
+
+.maincontainer2{
+  margin-left: 300px;
+  margin-top: -20px;
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 320px;
+  background-color: transparent;
+}
+.maincontainer3{
+  margin-left: 600px;
+ margin-top: -320px;
+display: block;
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 320px;
+  background-color: transparent;
+}
+.maincontainer4{
+  margin-left: 300px;
+ margin-top: -20px;
+display: block;
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 320px;
+  background-color: transparent;
+}
+.maincontainer5{
+  margin-left: 600px;
+ margin-top: -320px;
+display: block;
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 320px;
+  background-color: transparent;
+}
+.thecard p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight:lighter;
+  text-align: center;
+}
+
+
+
+.thecard{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  
+}
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+.thefront{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #333;
+text-align: center;
+font-family: 'zilla slab', sans-serif;
+border-radius: 20px;
+font-weight: bold;
+}
+.thefront img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(4, 30, 4);
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  font-family: 'zilla slab', sans-serif;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+  body{
+ 
+    font-family: sans-serif;
+    background-color:rgb(4, 36, 4); 
+    background-size: cover;
+    background-position: center;
+ 
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.logo{
+margin-left: -20px;
+width: 100px;
+cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    transition: width 0.2s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+
+}
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: rgb(4, 30, 4);
+
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.shadow::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    height: 7px;
+    width: 50px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.shadow:hover .about-img{
+    transform: translateY(-10px);
+}
+.shadow:hover::after{
+    opacity: 1;
+}
+  
+  
+  
+  

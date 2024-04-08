@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>respiratory diseases</title>
+    <link rel="stylesheet" href="general.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="generalmobile.css" media="(max-width: 600px)">
+</head>
+<body>
+   <div class="container">
+    <header>
+            
+        <nav>
+            <a href="home.html"><img src="Images/logo.png" class="logo"></a>
+            
+            <ul>
+              <li><a href="cart.html">cart</a></li>
+              <li><a href="reviews.html">reviews</a></li>
+              <li><a href="aboutUs.html">about</a></li>
+            </ul>
+            <h1></h1>
+            
+    </nav>
+    </header>
+   
+      <main>
+        <div class="left">
+          <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront"><img src="Images/lobelia.jpg" alt=""></div>
+            <div class="theback">
+              <h3>Lobelie</h3>
+              <p>Lobelia is an herb that has been traditionally used to treat respiratory conditions such as asthma, bronchitis, and coughs. It contains compounds that can help to relax the muscles in the airways, making it easier to breathe. However, it should be used with caution and under the guidance of a healthcare professional, as high doses can be toxic.</p>
+            </div>
+          </div>
+          <br>
+          <div class="maincontainer2">
+            <div class="thecard">
+              <div class="thefront"><img src="Images/mullein.jpg" alt=""></div>
+              <div class="theback">
+                <h3>
+                 Mullein
+                </h3>
+                <p>Mullein is a herb that has been traditionally used to treat respiratory conditions such as coughs, bronchitis, and asthma. Its leaves and flowers contain compounds that can help to soothe inflammation and promote the expulsion of mucus from the respiratory tract. Additionally, mullein has been used topically in skincare products to soothe and heal the skin, particularly for conditions such as eczema and psoriasis.</p>
+              </div>
+            </div></div>
+       <div class="down">
+      </div>
+      <div class="maincontainer3">
+        <div class="thecard">
+          <div class="thefront"><img src="Images/oregano.jpg" alt=""></div>
+          <div class="theback">
+            <h3>Oregano</h3>
+            <p>regano is a fragrant herb that is often used in cooking, but it also has medicinal properties. It is rich in antioxidants and contains compounds that have antimicrobial and anti-inflammatory properties, making it a popular natural remedy for various ailments, including respiratory infections, digestive problems, and skin conditions. Oregano oil is also commonly used as a natural remedy for fungal and bacterial infections, including athlete's foot and nail fungus.</p>
+          </div>
+        </div>
+        <div class="maincontainer4">
+          <div class="thecard">
+            <div class="thefront"><img src="Images/marshmellow.jpg" alt=""></div>
+            <div class="theback">
+              <h3>Marshmello root</h3>
+              <p>Marshmallow root has traditionally been used to help soothe respiratory conditions such as coughs, bronchitis, and sore throats. It contains compounds that can help to reduce inflammation in the respiratory tract, which may help to ease breathing and reduce coughing. Additionally, marshmallow root can help to soothe and protect the mucous membranes in the respiratory tract, making it a popular natural remedy for respiratory ailments.</p>
+            </div>
+          </div>
+          
+       </div>
+          
+       
+                <div class="maincontainer5">
+                  <div class="thecard">
+                    <div class="thefront"><img src="Images/thyme.jpg" alt=""></div>
+                    <div class="theback">
+                      <h3>Thyme</h3>
+                      <p>Thyme is a fragrant herb that has been used for centuries for its medicinal properties, particularly for respiratory conditions such as bronchitis, coughs, and congestion. It contains compounds that have antimicrobial and anti-inflammatory properties, making it a popular natural remedy for respiratory infections. Additionally, thyme can help to relax the muscles in the respiratory tract, which can help to ease breathing and reduce coughing.</p>
+                    </div>
+                  </div>
+       </main>
+         
+              
+                <footer class="footer">
+                    
+                  <div class="row">
+                      <div class="footer-col">
+                          <h4>Phytomedicine</h4>
+                          <ul>
+                              <li><a href="aboutUs.html">about us</a></li>
+                              <li><a href="#ourservices ">our services</a></li>
+                              <li><a href="#privacypolicy">privacy policy</a></li>
+                           
+                          </ul>
+                      </div>
+                      <div class="footer-col">
+                          <h4>Our categories</h4>
+                          <ul>
+                              <li><a href="cardiovascular.html">cardiovascular diseases</a></li>
+                              <li><a href="visual.html">visual diseases</a></li>
+                              <li><a href="skin.html">skin diseases</a></li>
+                              <li><a href="respiratory.html">respiratory diseases</a></li>
+                              <li><a href="">and more in progress</a></li>
+                          </ul>
+                      </div>
+                      
+                      <div class="footer-col">
+                          <h4>follow us</h4>
+                          <div class="social-links">
+                              <a href="https://www.instagram.com/in/phyto-medicine"><img style="height: 30px; width: 30px; padding-top: 6px;" src="Images/instagram.png" alt=""></a>
+                              <a href="mailto:mbz001@pu.edu.lb"><img style="height: 30px; width: 30px; padding-top: 6px;"src="Images/mail.png" alt=""></a>
+                              <a href="https://wa.me/96103131251"><img style="height: 30px; width: 30px; padding-top: 6px;"src="Images/whatsapp.png" alt=""></a>
+                              <a href="https://www.linkedin.com/in/marwa-zeineddine-476997248"><img style="height: 30px; width: 30px; padding-top: 6px;"src="Images/linkedin.png" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+            
+          </footer>
+           
+          </div>
+          <script>
+      const images = document.querySelectorAll('.gallery img');
+      const lightboxContainer = document.querySelector('.lightbox-container');
+      const lightboxContent = document.querySelector('.lightbox-content');
+      const lightboxImage = document.querySelector('.lightbox-content img');
+      const lightboxClose = document.querySelector('.lightbox-close');
+      
+      images.forEach(image => {
+        image.addEventListener('click', () => {
+      
+          lightboxContainer.style.display = 'flex';
+      
+          lightboxImage.src = image.src;
+      
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      
+      lightboxClose.addEventListener('click', () => {
+        lightboxContainer.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      });
+          </script>
+      </body>
+      </html>

@@ -1,0 +1,236 @@
+*{
+	    padding: 0;
+	    margin: 0;
+	    box-sizing: border-box;
+	}
+    nav{
+        background-color: rgb(3, 37, 3); 
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 5px 0;
+    }
+    .logo{
+    margin-left: -20px;
+    width: 100px;
+    cursor: pointer;
+    }
+    nav ul{
+        flex: 1;
+        text-align: right;
+        padding-right: 30px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 30px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: white;
+        transition: width 0.2s;
+    }
+    nav ul li a:hover::after{
+        width: 50%;
+    
+    }
+	body{
+	    font-family: 'Poppins', sans-serif;
+	}
+	.about-wrapper{
+	    height: 100vh;
+	}
+	.about-left{
+	    background: rgb(4, 37, 4);
+        background-image: url(Images/herbal.jpg);
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    height: 100vh;
+	}
+    
+	.about-left-content > div{
+	    background: lightgreen;
+	    padding: 4rem 4rem 2.5rem 5rem;
+	    text-align: center;
+	}
+	.about-left-content{
+	    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+	   
+	}
+	.about-img img{
+	    display: block;
+	    width: 200px;
+	}
+	.about-img{
+	    width: 200px;
+	    height: 200px;
+	    overflow: hidden;
+	    border-radius: 50%;
+	    transition: all 0.5s ease-in-out;
+	}
+	.shadow{
+	    margin-left: auto;
+	    margin-right: auto;
+	    border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+	    position: relative;
+	    cursor: pointer;
+	}
+	.shadow::after{
+	    content: "";
+	    position: absolute;
+	    background: rgba(0, 0, 0, 0.4);
+	    left: 50%;
+	    transform: translateX(-50%);
+	    bottom: -20px;
+	    height: 7px;
+	    width: 50px;
+	    filter: blur(3px);
+	    -webkit-filter: blur(3px);
+	    opacity: 0;
+	    transition: all 0.6s ease;
+	}
+	.shadow:hover .about-img{
+	    transform: translateY(-10px);
+	}
+	.shadow:hover::after{
+	    opacity: 1;
+	}
+	.about-left-content h2{
+	    font-size: 2rem;
+	    margin: 2.2rem 0 0.6rem 0;
+	    line-height: 1.2;
+	    padding-bottom: 1rem;
+	    border-bottom: 2px solid #edffec;
+	}
+	.about-left-content h3{
+	    text-transform: uppercase;
+	    font-weight: 300;
+	    letter-spacing: 5px;
+	    margin-top: 1.2rem;
+	}
+
+	.about-right{
+	    background: #fff;
+	    height: 100vh;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 0 5rem;
+	    text-align: center;
+	}
+	.about-right h1{
+	    font-size: 7rem;
+	    text-transform: uppercase;
+	}
+	.about-right h1 span{
+	    color: rgb(4, 40, 4);
+	}
+	.about-right h2{
+	    font-weight: 600;
+	}
+	
+	.about-para p{
+	    font-weight: 300;
+	    padding: 0.5rem;
+	    opacity: 0.8;
+	}
+	@media screen and (min-width: 900px){
+	    .about-wrapper{
+	        display: grid;
+	        grid-template-columns: repeat(2, 1fr);
+	    }
+	    .about-left{
+	        position: relative;
+	    }
+	    .about-left-content{
+	        position: absolute;
+	        right: -50px;
+	    }
+	
+    }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: rgb(4, 30, 4);
+    
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  
+  
+  
+  

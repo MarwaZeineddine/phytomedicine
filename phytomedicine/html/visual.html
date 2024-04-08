@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual problems</title>
+    <link rel="stylesheet" href="general.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="generalmobile.css" media="(max-width: 600px)">
+</head>
+<body>
+    <div class="conatiner">
+        <header>
+            
+            <nav>
+                <a href="home.html"><img src="Images/logo.png" class="logo"></a>
+                
+                <ul>
+                  <li><a href="cart.html">cart</a></li>
+                  <li><a href="reviews.html">reviews</a></li>
+                  <li><a href="aboutUs.html">about</a></li>
+                </ul>
+                
+           
+        </nav>
+        </header>
+        <main>
+          <main>
+            <div class="left">
+              <div class="maincontainer">
+                <div class="thecard">
+                  <div class="thefront"><img src="Images/saffron.jpg" alt=""></div>
+                  <div class="theback">
+                    <h3>Saffron</h3>
+                    <p>Saffron is a spice that is derived from the dried stigmas of the Crocus sativus plant. It contains compounds that have antioxidant and anti-inflammatory properties, which can help to protect the cells in the eye from damage caused by oxidative stress. Saffron has been shown to improve vision in people with age-related macular degeneration and may also help to improve visual acuity in people with early-stage cataracts.</p>
+                  </div>
+                </div>
+                <br>
+                <div class="maincontainer2">
+                  <div class="thecard">
+                    <div class="thefront"><img src="Images/coleus.jpg" alt=""></div>
+                    <div class="theback">
+                      <h3>Coleus</h3>
+                      <p>Coleus is a herb that contains a compound called forskolin, which has been shown to have several potential benefits for vision. Forskolin may help to reduce intraocular pressure, making it a potential treatment option for glaucoma.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="down">
+              <div class="maincontainer3">
+                <div class="thecard">
+                  <div class="thefront"><img src="Images/eyebright.jpg" alt=""></div>
+                  <div class="theback">
+                    <h3>eye bright</h3>
+                   <p>Eyebright is an herb that has been traditionally used to treat a variety of eye conditions, including conjunctivitis, eye strain, and dry eyes. It contains compounds that have anti-inflammatory and astringent properties, which can help to reduce inflammation and irritation in the eyes. Eyebright has also been used topically in eye drops to help soothe and hydrate the eyes.</p>
+                  </div>
+                </div>
+                <div class="maincontainer4">
+                  <div class="thecard">
+                    <div class="thefront"><img src="Images/goldenseal.jpg" alt=""></div>
+                    <div class="theback">
+                      <h3>GoldenSeal</h3>
+                      <p>There is limited research on the use of goldenseal for visual problems. While goldenseal contains compounds with potential antimicrobial and anti-inflammatory properties that could be beneficial for certain eye conditions, there is insufficient evidence to support its use as a treatment option for visual problems. More research is needed to fully understand the effects of goldenseal on eye health and its potential uses in treating visual problems. </p>
+                    </div>
+                  </div>
+                  
+            </div>
+              
+                    <div class="maincontainer5">
+                      <div class="thecard">
+                        <div class="thefront"> <img src="Images/bilberry.jpg" alt=""></div>
+                        <div class="theback">
+                          <h3>BilBerry</h3>
+                          <p>Bilberry is a fruit that is rich in antioxidants called anthocyanins, which can help to protect the cells in the eye from damage caused by oxidative stress. It has been traditionally used to improve night vision and treat a variety of eye conditions, including macular degeneration, cataracts, and retinopathy. Bilberry may also help to improve blood flow to the retina, which can help to maintain healthy vision. </p>
+                        </div>
+                      </div>
+           </main>
+                  
+                    <footer class="footer">
+                        
+                      <div class="row">
+                          <div class="footer-col">
+                              <h4>Phytomedicine</h4>
+                              <ul>
+                                  <li><a href="aboutUs.html">about us</a></li>
+                                  <li><a href="#ourservices ">our services</a></li>
+                                  <li><a href="#privacypolicy">privacy policy</a></li>
+                               
+                              </ul>
+                          </div>
+                          <div class="footer-col">
+                              <h4>Our categories</h4>
+                              <ul>
+                                  <li><a href="cardiovascular.html">cardiovascular diseases</a></li>
+                                  <li><a href="visual.html">visual diseases</a></li>
+                                  <li><a href="skin.html">skin diseases</a></li>
+                                  <li><a href="respiratory.html">respiratory diseases</a></li>
+                                  <li><a href="">and more in progress</a></li>
+                              </ul>
+                          </div>
+                          
+                          <div class="footer-col">
+                              <h4>follow us</h4>
+                              <div class="social-links">
+                                  <a href="https://www.instagram.com/in/phyto-medicine"><img style="height: 30px; width: 30px; padding-top: 6px;" src="Images/instagram.png" alt=""></a>
+                                  <a href="mailto:mbz001@pu.edu.lb"><img style="height: 30px; width: 30px; padding-top: 6px;"src="Images/mail.png" alt=""></a>
+                                  <a href="https://wa.me/96103131251"><img style="height: 30px; width: 30px; padding-top: 6px;"src="Images/whatsapp.png" alt=""></a>
+                                  <a href="https://www.linkedin.com/in/marwa-zeineddine-476997248"><img style="height: 30px; width: 30px; padding-top: 6px;"src="Images/linkedin.png" alt=""></a>
+                              </div>
+                          </div>
+                      </div>
+                
+              </footer>
+               
+              </div>
+          <script>
+const images = document.querySelectorAll('.gallery img');
+const lightboxContainer = document.querySelector('.lightbox-container');
+const lightboxContent = document.querySelector('.lightbox-content');
+const lightboxImage = document.querySelector('.lightbox-content img');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+images.forEach(image => {
+  image.addEventListener('click', () => {
+
+    lightboxContainer.style.display = 'flex';
+
+    // Get the URL of the image to be displayed
+    const newImageSrc = image.getAttribute('data-src');
+
+    // Change the source of the lightbox image to the new image URL
+    lightboxImage.src = newImageSrc;
+
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+lightboxClose.addEventListener('click', () => {
+  lightboxContainer.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+          </script>
+          </body>
+          </html>
+   
